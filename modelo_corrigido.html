@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="modelo corrigido para prática de HTML semântico" />
+    <title>consolidação html</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Minha Página de Estudos HTML</h1>
+        <p>Praticando estrutura semântica, conteúdo e formulários em HTML.</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#midia">Mídia</a></li>
+            <li><a href="#tabela">Tabela</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <p>
+                Esta página foi criada para praticar conceitos básicos de HTML e sua estrutura semântica.
+                O uso de elementos semânticos é <strong>fundamental para organização e acessibilidade</strong> do conteúdo.
+            </p>
+
+            <p>
+                O HTML permite estruturar páginas web de forma clara e organizada,
+                sendo <em>essencial para o desenvolvimento de sites modernos</em>.
+            </p>
+        </section>
+
+        <section id="conteudo">
+            <h2>Conteúdo Estudado</h2>
+            <ul>
+                <li>Estrutura básica do HTML</li>
+                <li>Elementos semânticos</li>
+                <li>Listas e navegação</li>
+                <li>Formulários e tabelas</li>
+            </ul>
+        </section>
+
+        <section id="midia">
+            <h2>Mídia</h2>
+            <figure>
+                <img src="https://via.placeholder.com/400"
+                     alt="Imagem ilustrativa representando desenvolvimento web com código HTML na tela"
+                     width="400"
+                     height="300">
+                <figcaption>Imagem ilustrativa sobre desenvolvimento web.</figcaption>
+            </figure>
+        </section>
+
+        <section id="tabela">
+            <h2>Tabela de Funcionalidades</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descrição</th>
+                        <th>Prioridade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Navegação</td>
+                        <td>Links para seções</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Imagem</td>
+                        <td>Com texto alternativo</td>
+                        <td>Média</td>
+                    </tr>
+                    <tr>
+                        <td>Formulário</td>
+                        <td>Campos obrigatórios</td>
+                        <td>Alta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="erro">Erro</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto de consolidação de conhecimentos em HTML — 2026</p>
+        <a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">
+            Fonte: Tags HTML - HomeHost
+        </a>
+    </footer>
+
+</body>
+
+</html>
